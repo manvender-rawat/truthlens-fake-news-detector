@@ -139,10 +139,14 @@ st.markdown("""
 # FILE PATHS
 # ============================================================
 
-MODEL_PATH = "Model\\svm_model.pkl"
-VECTORIZER_PATH = "Model\\tfidf_vectorizer.pkl"
-DATA_PATH = "Data\\combined_data.csv"
+# MODEL_PATH = "Model\\svm_model.pkl"
+# VECTORIZER_PATH = "Model\\tfidf_vectorizer.pkl"
+# DATA_PATH = "Data\\combined_data.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+MODEL_PATH = os.path.join(BASE_DIR, "Model", "svm_model.pkl")
+VECTORIZER_PATH = os.path.join(BASE_DIR, "Model", "tfidf_vectorizer.pkl")
+DATA_PATH = os.path.join(BASE_DIR, "Data", "combined_data.csv")
 
 # ============================================================
 # LOAD MODEL AND VECTORIZER
