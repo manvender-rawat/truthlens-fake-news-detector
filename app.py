@@ -139,9 +139,9 @@ st.markdown("""
 # FILE PATHS
 # ============================================================
 
-MODEL_PATH = r"D:\TruthLens\Model\svm_model.pkl"
-VECTORIZER_PATH = r"D:\TruthLens\Model\tfidf_vectorizer.pkl"
-DATA_PATH = r"D:\TruthLens\Data\combined_data.csv"
+MODEL_PATH = "Model\\svm_model.pkl"
+VECTORIZER_PATH = "Model\\tfidf_vectorizer.pkl"
+DATA_PATH = "Data\\combined_data.csv"
 
 
 # ============================================================
